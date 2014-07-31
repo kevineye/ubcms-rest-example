@@ -1,0 +1,11 @@
+.breadcrumbs {
+    display: none;
+}
+
+.title h1 {
+    margin-top: 15px;
+}
+
+code {
+    font-family: Consolas, monospace;
+}

@@ -1,0 +1,106 @@
+<div class="departmentheader section"><div class="inner">
+    <div class="title"><a href="/content/demo.html">UBCMS Demo Site</a></div>
+    <div class="header-search"><div class="search"><div class="fields" data-set="mobile-search">
+        <form id="searchform-415992" name="gs" method="GET" action="/content/demo/components/special/searchresults.html" onsubmit="return (this.q.value == '') ? false : true;">
+            <div class="field-bg">
+                <input id="searchform-415992-input" autocomplete="off" type="text" name="q" value="" class="type-text" placeholder="Search">
+                <i class="icon icon-search"></i>
+                <input type="submit" value="Search" class="type-submit">
+            </div>
+            <table cellpadding="0" cellspacing="0" class="ss-gac-m" style="visibility: hidden;" id="search_suggest"></table>
+        </form>
+    </div>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('#searchform-415992').sSugessions({baseURL: '/content/demo/components/special/searchresults/_jcr_content/par/searchresults', site: 'UB', client: 'ubcms'});
+        });
+    </script>
+</div>
+</div>
+	<div class="parbase list headernav"><div class="header-info-for-nav-container">
+<div class="header-info-for-nav-line"></div>
+<div class="header-info-for-nav">
+<ul class="nav-list">
+	<li class="header header-info-for-nav-text">
+	<div>Info For:</div>
+	</li>
+
+	<li><a class="header-info-for-nav-first" href="/content/demo/designs/flex.html">Students</a></li>
+			<li><a href="/content/demo/designs/gray.html">Faculty</a></li>
+			<li class="header-info-for-nav-last"><a href="/content/demo/designs/flex.html">Alumni</a> <span class="last-image"></span></li>
+			</ul>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+		if(jQuery(".departmentheader .headernav li").size() == 0)
+		    jQuery(".departmentheader .inner").addClass("no-header-nav");
+        if(jQuery(".departmentheader .search input").size() == 0)
+            jQuery(".departmentheader .inner").addClass("no-search");
+	</script>
+    <div class="mobileheader-button mobileheader-button-search" style="display:none">
+            <a class="mobileheader-button-inner" href="#">
+                <i class="icon icon-search"></i>
+            </a>
+        </div>
+        <div class="mobileheader-button mobileheader-button-menu" style="display:none">
+            <a class="mobileheader-button-inner" href="#">
+                <i class="icon icon-list"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="mobilemenu section"><div id="mobile-search" class="menu"><div id="mobile-search-inner" class="menu-inner" data-set="mobile-search"></div></div>
+    <div id="mobile-menu" class="menu"><div id="mobile-menu-inner" class="menu-inner"><div class="loading">Loading menu...</div></div></div>
+    <script>
+        $('.mobileheader-button-menu').removeAttr('style');
+        if ($('.departmentheader .no-search').length == 0) {
+            $('.mobileheader-button-search').removeAttr('style');
+        }
+        UBCMS.rwd.mobileMenu.load('\/content\/demo\/jcr:content.nav.html', '\/content\/demo\/config\/header.html');
+    </script>
+</div>
+<div class="topnav section"><div class="topnav-inner">
+    <div class="main"><ul class="menu"><li class="first"><a href="/content/demo/templates.html"><span class="container">Template Examples</span></a><div class="topnav-submenu-container"><ul class="submenu clearfix"><li class="first"><a href="/content/demo/templates/three_column_withimage.html">Standard Page with Right Sidebar</a></li><li><a href="/content/demo/templates/two_column.html">Wide Page</a></li><li><a href="/content/demo/templates/gallery_page.html">Gallery Page</a></li><li><a href="/content/demo/templates/news_and_events_list.html">News and Events List</a></li><li><a href="/content/demo/templates/gateway.html">Standard Page with Banner Image</a></li><li><a href="/content/demo/templates/contact_form.html">Contact Form</a></li><li><a href="/content/demo/templates/one_column.html">One Column Page</a></li><li><a href="/content/demo.html">Redirect</a></li><li><a href="http://www.google.com">External Redirect</a></li><li><a href="/content/demo/templates/home_pages.html">Home Pages</a></li><li><a href="/content/demo/templates/archived_templates.html">Archived Templates</a></li><li><a href="/content/demo/templates/Wide_Page_No_Left_Navigation.html">Wide Page No Left Navigation</a></li><li><a href="/content/demo/templates/wide-no-nav-with-banner.html">Wide no Nav with Banner</a></li><li class="last"><a href="/content/demo/templates/blog.html">UBCMS Blog Prototype</a></li></ul><div class="relatedLinks relatedlinksreference"><div class="nav-related-links">
+<div class="subnav-title">Related Links</div>
+<div class="par parsys"><div class="relatedlinks parbase list section"><ul class="link-list"><li>
+        <div class="page contentpage"><span class="teaser teaser-inline">
+    <a href="/content/demo/components.html"><span class="teaser-inner">
+        <span class="teaser-date">6/24/14</span>
+        <span class="teaser-title">Components</span>
+        </span>
+    </a></span>
+</div>
+</li>
+</ul></div>
+
+</div>
+</div>
+</div>
+</div></li><li><a href="/content/demo/components.html"><span class="container">Component Examples</span></a><div class="topnav-submenu-container"><ul class="submenu clearfix"><li class="first"><a href="/content/demo/components/content.html">Content Components</a><div class="topnav-submenu-children-container list"><ul class="submenu-children clearfix link-list"><li class="first"><a href="/content/demo/components/content/titles.html">Title</a></li><li><a href="/content/demo/components/content/calltoactionpage.html">Call To Action</a></li><li><a href="/content/demo/components/content/image.html">Photo</a></li><li><a href="/content/demo/components/content/zoom.html">Photo: Zoom</a></li><li><a href="/content/demo/components/content/floatedimage.html">Photo: Float</a></li><li><a href="/content/demo/components/content/gallery.html">Photo Gallery</a></li><li><a href="/content/demo/components/content/photo-slideshow.html">Photo Slideshow</a></li><li><a href="/content/demo/components/content/list.html">List Builder</a></li><li><a href="/content/demo/components/content/directorylist.html">Directory List</a></li><li><a href="/content/demo/components/content/divider.html">Divider</a></li><li><a href="/content/demo/components/content/columns.html">Column Control</a></li><li><a href="/content/demo/components/content/assetstoolpage.html">Related Content Components</a></li><li><a href="/content/demo/components/content/flexmodule.html">Flex Module</a></li><li><a href="/content/demo/components/content/youtubevideo.html">YouTube Video</a></li><li><a href="/content/demo/components/content/audioplayer.html">Audio Player</a></li><li><a href="/content/demo/components/content/maps.html">Map</a></li><li><a href="/content/demo/components/content/form.html">Form</a></li><li><a href="/content/demo/components/content/sitemap.html">Site Map</a></li><li><a href="/content/demo/components/content/callout.html">Callout</a></li><li><a href="/content/demo/components/content/button.html">Button</a></li><li><a href="/content/demo/components/content/on-this-page.html">On This Page</a></li><li class="last"><a href="/content/demo/components/content/collapsible.html">Collapsible Content</a></li></ul></div></li><li><a href="/content/demo/components/shared.html">Shared Content Components</a></li><li><a href="/content/demo/components/developer.html">Developer Components</a></li><li class="last"><a href="/content/demo/components/special.html">Special Purpose Components</a></li></ul><div class="relatedLinks relatedlinksreference"></div>
+</div></li><li><a href="/content/demo/designs/flex.html"><span class="container">Design Examples</span></a><div class="topnav-submenu-container"><ul class="submenu clearfix"><li class="first"><a href="/content/demo/designs/flex.html">Flex (default)</a></li><li><a href="/content/demo/designs/gray.html">Gray</a></li><li><a href="/content/demo/designs/darkblue.html">Dark Blue</a></li><li><a href="/content/demo/designs/green.html">Green</a></li><li><a href="/content/demo/designs/orange.html">Orange</a></li><li class="last"><a href="/content/demo/designs/blue.html">Light Blue</a></li></ul><div class="relatedLinks relatedlinksreference"><div class="nav-related-links">
+<div class="subnav-title">Related Links</div>
+<div class="par parsys"><div class="relatedlinks parbase list section"><ul class="link-list"><li>
+        <div class="page contentpage"><span class="teaser teaser-inline">
+    <a href="/content/demo/components.html"><span class="teaser-inner">
+        <span class="teaser-date">6/24/14</span>
+        <span class="teaser-title">Components</span>
+        </span>
+    </a></span>
+</div>
+</li>
+</ul></div>
+
+</div>
+</div>
+</div>
+</div></li><li class="last"><a href="/content/demo/tests.html"><span class="container">Tests</span></a><div class="topnav-submenu-container"><ul class="submenu clearfix"><li class="first"><a href="/content/demo/tests/text.html">Text</a></li><li><a href="/content/demo/tests/title.html">Title</a></li><li><a href="/content/demo/tests/photo.html">Photo</a></li><li><a href="/content/demo/tests/qunit.html">QUnit</a></li><li><a href="/content/demo/tests/reference.html">Reference</a></li><li><a href="/content/demo/tests/List.html">List</a></li><li class="last"><a href="/content/demo/tests/external.html">External Embed</a></li></ul><div class="relatedLinks relatedlinksreference"></div>
+</div></li></ul></div>
+    <div class="topnav2 section">
+        <div class="parbase horizontallist list"><ul class="horizontal-link-list clearfix"><li class="last"><a href="/etc/designs/wci/demo/jcrsh/index.html"><span class='arrow'>&gt;</span> JCR Shell</a></li>
+                </ul></div>
+</div>
+</div>
+</div>
+<div class="section breadcrumbs"><div class="breadcrumbs-inner"><ul class="breadcrumb"><li><a href="/content/demo.html">UBCMS Demo Site</a> <span class="arrow">&gt;</span> </li><li><a href="/content/demo/config.html">Site-Wide Configuration</a> <span class="arrow">&gt;</span> </li><li class="current-page">Header</li></ul></div></div>
+
